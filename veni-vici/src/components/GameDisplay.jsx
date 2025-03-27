@@ -1,13 +1,25 @@
-import React from 'react'
+import React from 'react';
+import "../App.css";
 function GameDisplay({ game, addToBanList }) {
-    return (
-      <div>
-        <h2>{game.name}</h2>
-        <p>Genre: {game.genres.map((genre) => genre.name).join(', ')}</p>
-        <p>Released: {game.released}</p>
-        <img src={game.background_image} alt={game.name} style={{ width: '300px', height: '200px' }} />
-        <button onClick={() => addToBanList(game.name)}>Ban This Game</button>
-      </div>
-    );
-  }
-export default GameDisplay;  
+  return (
+    <div>
+      <h2 onClick={() => addToBanList('name', game.name)} style={{ cursor: 'pointer'}}>
+        {game.name}
+      </h2>
+      <p className="genres">
+        Genre:{' '}
+        {game.genres.map((genre) => (
+          <span key={genre.name} onClick={() => addToBanList('genre', genre.name)} style={{ cursor: 'pointer'}}>
+            {genre.name}
+          </span>
+        ))}
+      </p>
+      <p onClick={() => addToBanList('release', game.released)} style={{ cursor: 'pointer'}}>
+        Released: {game.released}
+      </p>
+      <img src={game.background_image} alt={game.name} style={{ width: '300px', height: '200px' }} />
+    </div>
+  );
+}
+
+export default GameDisplay;
