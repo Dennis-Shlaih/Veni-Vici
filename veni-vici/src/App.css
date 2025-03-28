@@ -78,3 +78,13 @@ body, html {
   gap: 10px; 
   justify-content: center;
 }
+
+.banned-item {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.banned-item:hover {
+  color: red;
+  text-decoration: line-through;
+}

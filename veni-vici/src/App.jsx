@@ -48,7 +48,8 @@ function App() {
       <button onClick={fetchRandomGame}>Get New Game</button>
       {currentGame && <GameDisplay game={currentGame} addToBanList={addToBanList} />}
     </div>
-    <BanList banList={banList} />
+    <BanList banList={banList} setBanList={setBanList} />
+
 </div>
   );
 }
