@@ -2,7 +2,7 @@
 
 Submitted by: **Dennis Shlaih**
 
-This web app: **This Veni-Vici React app utilizes the RAWG Video Games Database API, which provides access to a comprehensive collection of video game data. This app can help users discover video games, and see their essential attributes such as the name, release date, and genre. Users can ban specific attributes by clicking on them, placing them on a ban list. Users can use this ability to filter for certain games, or explore new content.**
+This web app: **Veni-Vici is a React app utilizes the RAWG Video Games Database API, which provides access to a comprehensive collection of video game data. This app can help users discover video games, and see their essential attributes such as the name, release date, and genre. Users can ban specific attributes by clicking on them, placing them on a ban list. Users can use this ability to filter for certain games, or explore new content.**
 
 Time spent: **8** hours spent in total
 
